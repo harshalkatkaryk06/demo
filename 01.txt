@@ -1,4 +1,4 @@
-01
+01: Mean, Median, Mode
 from collections import Counter
 
 data = [45,14,55,45,11,45,14]
@@ -30,7 +30,7 @@ print(mean)
 print(median)
 print(mode)
 =================================================
-02
+02 Normal Distribution
 import matplotlib.pyplot as plt
 import numpy as np
 mh = 170
@@ -40,16 +40,12 @@ height = np.random.normal(mh,sdh,ns)
 plt.hist(height)
 plt.show()
 =================================================
-02-2
-import matplotlib.pyplot as plt
+02-2 
 import numpy as np
-mh = 110
-sdh = 10
-ns = 100
 heights = np.random.uniform(0.0,0.5,50)
 print(heights)
 =================================================
-03
+03 Draw Scatter
 import matplotlib.pyplot as plt
 x = [15,22,36,45]
 y = [4,1,5,6]
@@ -59,7 +55,7 @@ plt.show()
 from scipy import stats
 import matplotlib.pyplot as plt
 =================================================
-04
+04 Line of LR
 x = [11,22,11,44]
 y = [1,2,3,5]
 slope,intercept,r,p,std_err = stats.linregress(x,y)
@@ -71,7 +67,7 @@ plt.scatter(x,y)
 plt.plot(x,mymodel)
 plt.show()
 =================================================
-05
+05 age of car
 import matplotlib.pyplot as plt
 from scipy import stats
 
@@ -85,7 +81,7 @@ age = 5
 speed = pred(age)
 print(f'the speed is {speed:.2f}')
 =================================================
-06
+06 coefficients
 from sklearn.linear_model import LinearRegression
 import numpy as np
 x = [[11],[15],[33],[44]]
@@ -99,14 +95,14 @@ intercept = model.intercept_
 print(coefficients)
 print(intercept)
 =================================================
-07
+07 2d binary classification
 from sklearn.datasets import make_circles
 import matplotlib.pyplot as plt
 x,y = make_circles(noise=0.8)
 plt.scatter(x[:,0],x[:,1],c=y)
 plt.show()
 =================================================
-08
+08 display plot
 import matplotlib.pyplot as plt
 x = [14,120,5,1]
 y = [1,42,5,60]
@@ -123,14 +119,14 @@ y2 = [11,456,20,3]
 plt.plot(x2,y2,marker='o')
 plt.show()
 =================================================
-09
+09 Blobs
 from sklearn.datasets import make_blobs
 import matplotlib.pyplot as plt
 x,y = make_blobs()
 plt.scatter(x[:,0],x[:,1],c=y)
 plt.show()
 =================================================
-10
+10 
 from sklearn.datasets import make_multilabel_classification
 x,y = make_multilabel_classification(n_samples=10)
 print(x.shape,y.shape)
