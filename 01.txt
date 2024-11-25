@@ -51,11 +51,11 @@ x = [15,22,36,45]
 y = [4,1,5,6]
 plt.scatter(x,y)
 plt.show()
+=================================================
+04 Line of LR
 
 from scipy import stats
 import matplotlib.pyplot as plt
-=================================================
-04 Line of LR
 x = [11,22,11,44]
 y = [1,2,3,5]
 slope,intercept,r,p,std_err = stats.linregress(x,y)
